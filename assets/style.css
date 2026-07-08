@@ -72,9 +72,14 @@ h1, h2, h3 {
   margin-inline: auto;
 }
 
-/* language toggling: html[data-lang="zh"] hides [data-i18n-en], html[data-lang="en"] hides [data-i18n-zh] */
-html[data-lang="zh"] [data-i18n-en] { display: none; }
-html[data-lang="en"] [data-i18n-zh] { display: none; }
+/* language toggling: each translated block carries data-i18n-lang="<code>"; only the block
+   matching html[data-lang] is shown. Default-hide, then reveal the active language. */
+[data-i18n-lang] { display: none; }
+html[data-lang="zh"] [data-i18n-lang="zh"],
+html[data-lang="zh-TW"] [data-i18n-lang="zh-TW"],
+html[data-lang="ja"] [data-i18n-lang="ja"],
+html[data-lang="ko"] [data-i18n-lang="ko"],
+html[data-lang="en"] [data-i18n-lang="en"] { display: revert; }
 
 /* ── Nav ─────────────────────────────────────────────────────────────── */
 

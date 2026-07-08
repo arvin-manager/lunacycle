@@ -23,20 +23,30 @@
         LunaCycle
       </a>
       <ul class="nav-links">
-        <li><a href="./index.html"><span data-i18n-zh>首页</span><span data-i18n-en>Home</span></a></li>
-        <li><a href="./index.html#features"><span data-i18n-zh>功能</span><span data-i18n-en>Features</span></a></li>
-        <li><button class="lang-toggle" data-lang-toggle type="button" aria-label="Switch language">EN</button></li>
+        <li><a href="./index.html">
+          <span data-i18n-lang="zh">首页</span><span data-i18n-lang="zh-TW">首頁</span><span data-i18n-lang="ja">ホーム</span><span data-i18n-lang="ko">홈</span><span data-i18n-lang="en">Home</span>
+        </a></li>
+        <li><a href="./index.html#features">
+          <span data-i18n-lang="zh">功能</span><span data-i18n-lang="zh-TW">功能</span><span data-i18n-lang="ja">機能</span><span data-i18n-lang="ko">기능</span><span data-i18n-lang="en">Features</span>
+        </a></li>
+        <li><button class="lang-toggle" data-lang-toggle type="button" aria-label="Switch language">中文</button></li>
       </ul>
     </div>
   </nav>
 
   <header class="legal-hero">
     <div class="wrap">
-      <h1 data-i18n-zh>隐私政策</h1>
-      <h1 data-i18n-en>Privacy Policy</h1>
+      <h1 data-i18n-lang="zh">隐私政策</h1>
+      <h1 data-i18n-lang="zh-TW">隱私政策</h1>
+      <h1 data-i18n-lang="ja">プライバシーポリシー</h1>
+      <h1 data-i18n-lang="ko">개인정보 처리방침</h1>
+      <h1 data-i18n-lang="en">Privacy Policy</h1>
       <p class="updated">
-        <span data-i18n-zh>生效日期：<span class="placeholder">2026-07-08</span>（请替换为你实际发布的日期）</span>
-        <span data-i18n-en>Effective date: <span class="placeholder">2026-07-08</span> (replace with your actual publish date)</span>
+        <span data-i18n-lang="zh">生效日期：2026-07-12</span>
+        <span data-i18n-lang="zh-TW">生效日期：2026-07-12</span>
+        <span data-i18n-lang="ja">発効日：2026-07-12</span>
+        <span data-i18n-lang="ko">시행일: 2026-07-12</span>
+        <span data-i18n-lang="en">Effective date: 2026-07-12</span>
       </p>
     </div>
   </header>
@@ -44,8 +54,8 @@
   <section class="legal-body">
     <div class="wrap">
 
-      <!-- ============================ 中文版 / Chinese ============================ -->
-      <div data-i18n-zh>
+      <!-- ============================ 简体中文 / Simplified Chinese ============================ -->
+      <div data-i18n-lang="zh">
         <p>
           欢迎使用 <strong>LunaCycle</strong>（以下简称"我们"或"本应用"）。本隐私政策说明我们在你使用本应用时，会收集哪些信息、为什么收集、如何使用与保护，以及你可以如何行使自己的权利。请在使用本应用前仔细阅读本政策。
         </p>
@@ -105,12 +115,207 @@
         <h2>10. 联系我们</h2>
         <p>
           如果你对本隐私政策有任何疑问，或希望行使你的相关权利，请通过以下方式联系我们：<br />
-          <span class="placeholder">support@example.com</span>（请替换为你的真实联系邮箱）
+          anarvin212@gmail.com
+        </p>
+      </div>
+
+      <!-- ============================ 繁體中文 / Traditional Chinese ============================ -->
+      <div data-i18n-lang="zh-TW">
+        <p>
+          歡迎使用 <strong>LunaCycle</strong>（以下簡稱「我們」或「本應用程式」）。本隱私政策說明我們在你使用本應用程式時，會收集哪些資訊、為什麼收集、如何使用與保護，以及你可以如何行使自己的權利。請在使用本應用程式前仔細閱讀本政策。
+        </p>
+
+        <h2>1. 我們收集的資訊</h2>
+        <p><strong>帳戶資訊：</strong>如果你選擇使用 Google 登入或 Apple 登入，我們會取得你授權提供的電子郵件地址、姓名與頭像，用於建立和識別你的帳戶。如果你不登入，僅在本機使用，我們不會收集此類資訊。</p>
+        <p><strong>健康與週期資料：</strong>你在應用程式中記錄的經期、排卵、症狀、心情、睡眠、體溫、體重、運動、飲水、親密關係、用藥、備註等資訊。這些資料<strong>預設只保存在你裝置本機的資料庫中</strong>，不會自動上傳。</p>
+        <p><strong>雲端備份資料（可選功能）：</strong>如果你登入帳戶並主動開啟「雲端備份」，上述健康與週期資料的備份會上傳並儲存在由 Google Firebase 提供的 Cloud Firestore 中，以便你更換裝置時可以還原資料。你可以隨時在設定中關閉此功能，並刪除已上傳的雲端備份。</p>
+        <p><strong>使用與分析資料：</strong>我們使用 Firebase Analytics 收集應用程式使用情況，例如功能使用頻率、頁面瀏覽、裝置型號、作業系統版本與當機日誌，用於排查問題和改善產品體驗。</p>
+        <p><strong>廣告資料：</strong>我們使用 Google AdMob 在應用程式中展示廣告，可能會用到廣告識別碼（如 iOS 的 IDFA）以投放更相關的廣告。在 iOS 裝置上，我們會依據系統的應用程式追蹤透明度（ATT）框架請求你的授權，僅在你同意後才會用於跨應用程式追蹤；你可以隨時在系統設定中修改此授權。</p>
+        <p><strong>購買資訊：</strong>如果你購買 VIP 會員或其他應用程式內購買項目，交易由 Apple App Store 或 Google Play 處理，我們不會取得你的銀行卡號等付款資訊，只會收到購買狀態用於為你解鎖相應權益。</p>
+
+        <h2>2. 我們如何使用這些資訊</h2>
+        <ul>
+          <li>提供週期記錄、預測與圖表統計等核心功能；</li>
+          <li>在你開啟雲端備份時，實現跨裝置的資料同步與還原；</li>
+          <li>分析並改善應用程式效能與使用者體驗，排查故障；</li>
+          <li>展示廣告，並在你授權的情況下進行個人化投放；</li>
+          <li>處理訂閱與應用程式內購買，驗證並發放會員權益；</li>
+          <li>回應你的諮詢與意見回饋。</li>
+        </ul>
+
+        <h2>3. 資料儲存與安全</h2>
+        <p>你的健康與週期資料預設保存在裝置本機的資料庫中，並受你裝置自身的系統級安全機制保護。若你開啟雲端備份，資料在傳輸過程中透過 HTTPS/TLS 加密，雲端資料儲存在 Google Firebase 的基礎設施中。我們採取合理的技術與管理措施保護你的資訊，但請注意任何網際網路傳輸或儲存方式都無法做到絕對安全。</p>
+
+        <h2>4. 第三方服務</h2>
+        <p>本應用程式整合了以下第三方服務，它們可能會依照各自的隱私政策獨立處理資料：</p>
+        <ul>
+          <li>Firebase Authentication / Cloud Firestore / Firebase Analytics（Google）</li>
+          <li>Google 登入（Google Sign-In）</li>
+          <li>Apple 登入（Sign in with Apple）</li>
+          <li>Google AdMob（廣告）</li>
+          <li>Apple App Store / Google Play 應用程式內購買結算</li>
+        </ul>
+        <p>建議同時查閱這些第三方的隱私政策，以了解它們各自的資料處理方式。</p>
+
+        <h2>5. 你的選擇與權利</h2>
+        <ul>
+          <li>你可以隨時在設定中關閉雲端備份，並刪除已上傳的雲端備份資料；</li>
+          <li>你可以在系統設定中關閉個人化廣告追蹤（iOS 的「追蹤」權限、Android 的廣告個人化設定）；</li>
+          <li>你可以卸載應用程式以刪除裝置本機保存的全部資料；</li>
+          <li>如你所在地區法律（如 GDPR、CCPA）賦予你存取、更正、刪除、匯出個人資訊等權利，你可以透過下方聯絡方式向我們提出請求，我們會在合理時間內處理。</li>
+        </ul>
+
+        <h2>6. 兒童隱私</h2>
+        <p>本應用程式不面向 13 週歲（或你所在地區法律規定的最低年齡）以下的兒童，我們不會有意收集兒童的個人資訊。如果我們發現在不知情的情況下收集了兒童資訊，將盡快刪除。</p>
+
+        <h2>7. 資料保留</h2>
+        <p>本機資料會保留至你手動刪除記錄或卸載應用程式；雲端備份資料會保留至你刪除備份或註銷帳戶。</p>
+
+        <h2>8. 跨境資料傳輸</h2>
+        <p>由於我們使用 Google Firebase 等全球基礎設施，你的資料（在你開啟雲端備份的情況下）可能會被傳輸、儲存或處理於你所在國家/地區以外的伺服器上。</p>
+
+        <h2>9. 政策更新</h2>
+        <p>我們可能會不時更新本政策。如有重大變更，我們會在應用程式內或本頁面進行提示。建議你定期查看本頁面以了解最新內容。</p>
+
+        <h2>10. 聯絡我們</h2>
+        <p>
+          如果你對本隱私政策有任何疑問，或希望行使你的相關權利，請透過以下方式聯絡我們：<br />
+          anarvin212@gmail.com
+        </p>
+      </div>
+
+      <!-- ============================ 日本語 / Japanese ============================ -->
+      <div data-i18n-lang="ja">
+        <p>
+          <strong>LunaCycle</strong>（以下「当社」または「本アプリ」）をご利用いただきありがとうございます。本プライバシーポリシーでは、本アプリの利用時に当社が収集する情報、収集の目的、利用・保護の方法、およびあなたが行使できる権利について説明します。本アプリをご利用になる前に、本ポリシーをよくお読みください。
+        </p>
+
+        <h2>1. 収集する情報</h2>
+        <p><strong>アカウント情報：</strong>Google ログインまたは Apple ログインを利用する場合、あなたが許可したメールアドレス、氏名、プロフィール画像を取得し、アカウントの作成と識別に使用します。ログインせずに利用する場合、これらの情報は収集されません。</p>
+        <p><strong>健康・周期データ：</strong>月経、排卵、症状、気分、睡眠、体温、体重、運動、水分摂取、性交渉、服薬、メモなど、アプリ内で記録する情報です。これらのデータは<strong>初期設定では端末内のローカルデータベースにのみ保存</strong>され、自動的にアップロードされることはありません。</p>
+        <p><strong>クラウド保存データ（任意機能）：</strong>ログインして「クラウド保存」を有効にすると、上記の健康・周期データのバックアップが Google Firebase の Cloud Firestore にアップロード・保存され、機種変更時に復元できます。この機能は設定でいつでも無効化でき、アップロード済みのバックアップも削除できます。</p>
+        <p><strong>利用・解析データ：</strong>Firebase Analytics を使用して、機能の利用頻度、画面表示、端末モデル、OS バージョン、クラッシュログなどのアプリ利用状況を収集し、不具合の診断や製品改善に利用します。</p>
+        <p><strong>広告データ：</strong>Google AdMob を使用して広告を表示し、より関連性の高い広告を配信するために広告識別子（iOS の IDFA など）を利用する場合があります。iOS では Apple の App トラッキング透明性（ATT）の枠組みに基づき許可を求め、同意いただいた場合のみアプリ間トラッキングを行います。この許可は端末の設定でいつでも変更できます。</p>
+        <p><strong>購入情報：</strong>VIP メンバーシップなどのアプリ内購入を行った場合、決済は Apple App Store または Google Play が処理します。当社はカード番号などの決済情報を取得せず、特典を解除するための購入状況のみを受け取ります。</p>
+
+        <h2>2. 情報の利用方法</h2>
+        <ul>
+          <li>周期の記録、予測、グラフ統計などの主要機能を提供するため；</li>
+          <li>クラウド保存を有効にした場合、デバイス間でのデータ同期・復元を実現するため；</li>
+          <li>アプリの性能とユーザー体験を分析・改善し、不具合を診断するため；</li>
+          <li>広告を表示し、同意がある場合はパーソナライズを行うため；</li>
+          <li>サブスクリプションおよびアプリ内購入を処理し、特典を付与するため；</li>
+          <li>お問い合わせやフィードバックに対応するため。</li>
+        </ul>
+
+        <h2>3. データの保存とセキュリティ</h2>
+        <p>あなたの健康・周期データは初期設定で端末内のローカルデータベースに保存され、端末自体のシステムレベルのセキュリティ機構によって保護されます。クラウド保存を有効にした場合、データは HTTPS/TLS により送信時に暗号化され、クラウド上のデータは Google Firebase の基盤に保存されます。当社は情報を保護するために合理的な技術的・組織的対策を講じていますが、インターネット経由の送信や保存が完全に安全であることを保証するものではありません。</p>
+
+        <h2>4. 第三者サービス</h2>
+        <p>本アプリは以下の第三者サービスを組み込んでおり、それぞれ独自のプライバシーポリシーに基づいてデータを処理する場合があります：</p>
+        <ul>
+          <li>Firebase Authentication / Cloud Firestore / Firebase Analytics（Google）</li>
+          <li>Google ログイン（Google Sign-In）</li>
+          <li>Apple でサインイン（Sign in with Apple）</li>
+          <li>Google AdMob（広告）</li>
+          <li>Apple App Store / Google Play のアプリ内購入決済</li>
+        </ul>
+        <p>各サービスがどのようにデータを処理しているかについては、それぞれのプライバシーポリシーもご確認ください。</p>
+
+        <h2>5. あなたの選択と権利</h2>
+        <ul>
+          <li>設定でいつでもクラウド保存を無効化し、アップロード済みのバックアップを削除できます；</li>
+          <li>システム設定でパーソナライズ広告のトラッキングを無効化できます（iOS の「トラッキング」許可、Android の広告のパーソナライズ設定）；</li>
+          <li>アプリをアンインストールすることで、端末に保存された全データを削除できます；</li>
+          <li>お住まいの地域の法律（GDPR、CCPA など）により、個人情報へのアクセス、訂正、削除、エクスポートなどの権利が認められている場合、下記の連絡先からご請求いただければ、合理的な期間内に対応します。</li>
+        </ul>
+
+        <h2>6. 児童のプライバシー</h2>
+        <p>本アプリは13歳未満（またはお住まいの地域の法律で定める最低年齢未満）の児童を対象としておらず、児童の個人情報を意図的に収集することはありません。意図せず児童の情報を収集したことが判明した場合、速やかに削除します。</p>
+
+        <h2>7. データの保持</h2>
+        <p>ローカルデータは、あなたが記録を削除するかアプリをアンインストールするまで保持されます。クラウド保存データは、バックアップを削除するかアカウントを削除するまで保持されます。</p>
+
+        <h2>8. 国境を越えたデータ移転</h2>
+        <p>当社は Google Firebase などのグローバルなインフラを利用しているため、クラウド保存を有効にした場合、あなたのデータはお住まいの国・地域以外のサーバーに転送、保存、または処理される場合があります。</p>
+
+        <h2>9. ポリシーの変更</h2>
+        <p>本ポリシーは随時更新される場合があります。重大な変更がある場合は、アプリ内または本ページでお知らせします。最新の内容を確認するために、本ページを定期的にご確認ください。</p>
+
+        <h2>10. お問い合わせ</h2>
+        <p>
+          本プライバシーポリシーに関するご質問、または権利の行使をご希望の場合は、以下の方法でお問い合わせください：<br />
+          anarvin212@gmail.com
+        </p>
+      </div>
+
+      <!-- ============================ 한국어 / Korean ============================ -->
+      <div data-i18n-lang="ko">
+        <p>
+          <strong>LunaCycle</strong>(이하 "당사" 또는 "본 앱")을 이용해 주셔서 감사합니다. 본 개인정보 처리방침은 본 앱을 이용할 때 당사가 수집하는 정보, 수집 목적, 이용 및 보호 방법, 그리고 귀하가 행사할 수 있는 권리에 대해 설명합니다. 본 앱을 이용하기 전에 이 방침을 꼼꼼히 읽어보시기 바랍니다.
+        </p>
+
+        <h2>1. 수집하는 정보</h2>
+        <p><strong>계정 정보:</strong> Google 로그인 또는 Apple 로그인을 이용하는 경우, 귀하가 허용한 이메일 주소, 이름, 프로필 사진을 받아 계정을 생성하고 식별하는 데 사용합니다. 로그인 없이 기기에서만 이용하는 경우 이러한 정보는 수집되지 않습니다.</p>
+        <p><strong>건강 및 주기 데이터:</strong> 생리, 배란, 증상, 기분, 수면, 체온, 체중, 운동, 수분 섭취, 성관계, 복약, 메모 등 앱에서 기록하는 정보입니다. 이 데이터는 <strong>기본적으로 기기 내 로컬 데이터베이스에만 저장</strong>되며 자동으로 업로드되지 않습니다.</p>
+        <p><strong>클라우드 백업 데이터(선택 기능):</strong> 로그인 후 "클라우드 백업"을 직접 활성화하면, 위 건강 및 주기 데이터의 백업이 Google Firebase의 Cloud Firestore에 업로드 및 저장되어 기기를 변경할 때 복원할 수 있습니다. 이 기능은 설정에서 언제든지 끌 수 있으며, 이미 업로드된 백업도 삭제할 수 있습니다.</p>
+        <p><strong>이용 및 분석 데이터:</strong> 당사는 Firebase Analytics를 사용하여 기능 이용 빈도, 화면 조회, 기기 모델, OS 버전, 충돌 로그 등 앱 이용 현황을 수집하여 문제를 진단하고 제품을 개선합니다.</p>
+        <p><strong>광고 데이터:</strong> 당사는 Google AdMob을 사용하여 앱 내 광고를 표시하며, 더 관련성 높은 광고를 제공하기 위해 광고 식별자(iOS의 IDFA 등)를 사용할 수 있습니다. iOS에서는 Apple의 앱 추적 투명성(ATT) 정책에 따라 동의를 요청하며, 동의한 경우에만 앱 간 추적을 수행합니다. 이 권한은 시스템 설정에서 언제든지 변경할 수 있습니다.</p>
+        <p><strong>구매 정보:</strong> VIP 멤버십 등 인앱 구매를 진행하는 경우, 결제는 Apple App Store 또는 Google Play에서 처리됩니다. 당사는 카드 번호 등 결제 정보를 받지 않으며, 혜택 제공을 위한 구매 상태만 전달받습니다.</p>
+
+        <h2>2. 정보 이용 방법</h2>
+        <ul>
+          <li>주기 기록, 예측, 그래프 통계 등 핵심 기능 제공；</li>
+          <li>클라우드 백업 활성화 시 기기 간 데이터 동기화 및 복원；</li>
+          <li>앱 성능과 사용자 경험 분석 및 개선, 문제 진단；</li>
+          <li>광고 표시 및 동의한 경우 맞춤형 광고 제공；</li>
+          <li>구독 및 인앱 구매 처리, 혜택 검증 및 지급；</li>
+          <li>문의 및 피드백 응대.</li>
+        </ul>
+
+        <h2>3. 데이터 저장 및 보안</h2>
+        <p>귀하의 건강 및 주기 데이터는 기본적으로 기기 내 로컬 데이터베이스에 저장되며, 기기 자체의 시스템 수준 보안 메커니즘에 의해 보호됩니다. 클라우드 백업을 활성화하면 데이터는 전송 중 HTTPS/TLS로 암호화되며, 클라우드 데이터는 Google Firebase 인프라에 저장됩니다. 당사는 귀하의 정보를 보호하기 위해 합리적인 기술적·관리적 조치를 취하고 있으나, 인터넷을 통한 전송이나 저장은 완전히 안전할 수 없다는 점을 유의하시기 바랍니다.</p>
+
+        <h2>4. 제3자 서비스</h2>
+        <p>본 앱은 다음과 같은 제3자 서비스를 통합하고 있으며, 이들은 각자의 개인정보 처리방침에 따라 독립적으로 데이터를 처리할 수 있습니다:</p>
+        <ul>
+          <li>Firebase Authentication / Cloud Firestore / Firebase Analytics(Google)</li>
+          <li>Google 로그인(Google Sign-In)</li>
+          <li>Apple로 로그인(Sign in with Apple)</li>
+          <li>Google AdMob(광고)</li>
+          <li>Apple App Store / Google Play 인앱 결제</li>
+        </ul>
+        <p>각 서비스의 데이터 처리 방식을 이해하기 위해 해당 서비스의 개인정보 처리방침도 함께 확인하시기를 권장합니다.</p>
+
+        <h2>5. 귀하의 선택과 권리</h2>
+        <ul>
+          <li>설정에서 언제든지 클라우드 백업을 끄고, 이미 업로드된 백업 데이터를 삭제할 수 있습니다；</li>
+          <li>시스템 설정에서 맞춤형 광고 추적을 끌 수 있습니다(iOS의 "추적" 권한, Android의 광고 맞춤설정)；</li>
+          <li>앱을 삭제하여 기기에 저장된 모든 로컬 데이터를 삭제할 수 있습니다；</li>
+          <li>거주 지역의 법률(GDPR, CCPA 등)에 따라 개인정보에 대한 접근, 정정, 삭제, 내보내기 등의 권리가 인정되는 경우, 아래 연락처로 요청하시면 합리적인 기간 내에 처리해 드립니다.</li>
+        </ul>
+
+        <h2>6. 아동의 개인정보</h2>
+        <p>본 앱은 13세 미만(또는 거주 지역 법률이 정한 최소 연령 미만)의 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다. 부지불식간에 아동의 정보를 수집한 것으로 확인될 경우 신속히 삭제합니다.</p>
+
+        <h2>7. 데이터 보관</h2>
+        <p>로컬 데이터는 귀하가 기록을 삭제하거나 앱을 삭제할 때까지 보관되며, 클라우드 백업 데이터는 백업을 삭제하거나 계정을 삭제할 때까지 보관됩니다.</p>
+
+        <h2>8. 국가 간 데이터 이전</h2>
+        <p>당사는 Google Firebase 등 글로벌 인프라를 사용하므로, 클라우드 백업을 활성화한 경우 귀하의 데이터는 거주 국가/지역 이외의 서버로 전송, 저장 또는 처리될 수 있습니다.</p>
+
+        <h2>9. 정책 변경</h2>
+        <p>당사는 본 방침을 수시로 업데이트할 수 있습니다. 중대한 변경이 있는 경우 앱 내 또는 본 페이지를 통해 안내합니다. 최신 내용을 확인하기 위해 본 페이지를 정기적으로 확인하시기 바랍니다.</p>
+
+        <h2>10. 문의하기</h2>
+        <p>
+          본 개인정보 처리방침에 대해 질문이 있거나 관련 권리를 행사하고자 하는 경우, 아래 방법으로 문의해 주세요:<br />
+          anarvin212@gmail.com
         </p>
       </div>
 
       <!-- ============================ English ============================ -->
-      <div data-i18n-en>
+      <div data-i18n-lang="en">
         <p>
           Welcome to <strong>LunaCycle</strong> ("we", "us", or "the app"). This Privacy Policy explains what information we collect when you use the app, why we collect it, how we use and protect it, and how you can exercise your rights. Please read this policy carefully before using the app.
         </p>
@@ -170,7 +375,7 @@
         <h2>10. Contact Us</h2>
         <p>
           If you have any questions about this Privacy Policy, or wish to exercise your rights, please contact us at:<br />
-          <span class="placeholder">support@example.com</span> (replace with your real contact email)
+          anarvin212@gmail.com
         </p>
       </div>
 
@@ -179,9 +384,21 @@
 
   <footer>
     <div class="wrap">
-      <span>&copy; 2026 LunaCycle. <span data-i18n-zh>保留所有权利。</span><span data-i18n-en>All rights reserved.</span></span>
+      <span>&copy; 2026 LunaCycle.
+        <span data-i18n-lang="zh">保留所有权利。</span>
+        <span data-i18n-lang="zh-TW">保留所有權利。</span>
+        <span data-i18n-lang="ja">全著作権所有。</span>
+        <span data-i18n-lang="ko">모든 권리 보유.</span>
+        <span data-i18n-lang="en">All rights reserved.</span>
+      </span>
       <nav>
-        <a href="./index.html"><span data-i18n-zh>首页</span><span data-i18n-en>Home</span></a>
+        <a href="./index.html">
+          <span data-i18n-lang="zh">首页</span>
+          <span data-i18n-lang="zh-TW">首頁</span>
+          <span data-i18n-lang="ja">ホーム</span>
+          <span data-i18n-lang="ko">홈</span>
+          <span data-i18n-lang="en">Home</span>
+        </a>
       </nav>
     </div>
   </footer>
