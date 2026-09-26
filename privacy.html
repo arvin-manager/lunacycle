@@ -42,11 +42,11 @@
       <h1 data-i18n-lang="ko">개인정보 처리방침</h1>
       <h1 data-i18n-lang="en">Privacy Policy</h1>
       <p class="updated">
-        <span data-i18n-lang="zh">生效日期：2026-07-17</span>
-        <span data-i18n-lang="zh-TW">生效日期：2026-07-17</span>
-        <span data-i18n-lang="ja">発効日：2026-07-17</span>
-        <span data-i18n-lang="ko">시행일: 2026-07-17</span>
-        <span data-i18n-lang="en">Effective date: 2026-07-17</span>
+        <span data-i18n-lang="zh">生效日期：2026-09-26</span>
+        <span data-i18n-lang="zh-TW">生效日期：2026-09-26</span>
+        <span data-i18n-lang="ja">発効日：2026-09-26</span>
+        <span data-i18n-lang="ko">시행일: 2026-09-26</span>
+        <span data-i18n-lang="en">Effective date: 2026-09-26</span>
       </p>
     </div>
   </header>
@@ -64,9 +64,10 @@
         <p><strong>账户信息：</strong>如果你选择使用 Google 登录或 Apple 登录，我们会获取你授权提供的邮箱地址、姓名与头像，用于创建和识别你的账户。如果你不登录，仅在本机使用，我们不会收集此类信息。</p>
         <p><strong>健康与周期数据：</strong>你在应用中记录的经期、排卵、症状、心情、睡眠、体温、体重、运动、饮水、亲密关系、用药、备注等信息。这些数据<strong>默认只保存在你设备本地的数据库中</strong>，不会自动上传。</p>
         <p><strong>云备份数据（可选功能）：</strong>如果你登录账户并主动开启"云备份"，上述健康与周期数据的备份会上传并存储在由 Google Firebase 提供的 Cloud Firestore 中，以便你更换设备时可以恢复数据。你可以随时在设置中关闭该功能，并删除已上传的云端备份。</p>
-        <p><strong>使用与分析数据：</strong>我们使用 Firebase Analytics 收集应用使用情况，例如功能使用频率、页面访问、设备型号、操作系统版本与崩溃日志，用于排查问题和改进产品体验。</p>
-        <p><strong>广告数据：</strong>我们使用 Google AdMob 在应用中展示广告，可能会用到广告标识符（如 iOS 的 IDFA）以投放更相关的广告。在 iOS 设备上，我们会依据系统的 App 跟踪透明度（ATT）框架请求你的授权，仅在你同意后才会用于跨应用跟踪；你可以随时在系统设置中修改此授权。</p>
-        <p><strong>购买信息：</strong>如果你购买 VIP 会员或其他内购项目，交易由 Apple App Store 或 Google Play 处理，我们不会获取你的银行卡号等支付信息，只会收到购买状态用于为你解锁相应权益。</p>
+        <p><strong>Apple 健康数据（可选功能）：</strong>仅在你主动授权后，本应用才会从 Apple 健康单向读取经期、体重和睡眠数据。导入在设备本地完成，不会修改 Apple 健康中的数据；除非你另行开启云备份，否则导入的数据不会上传。</p>
+        <p><strong>使用与分析数据：</strong>仅在 ATT 已授权且识别为正式 App Store 安装时，我们启用 Firebase Analytics，收集功能使用、页面访问等事件及设备信息以改进产品。拒绝 ATT 时不启用该统计。Google AdMob 仍可能按其 SDK 数据披露收集 IP 地址（可推断大致位置）、设备标识符、广告及交互数据、崩溃与性能诊断信息，用于广告投放、衡量和服务改进；具体处理受适用的同意与系统权限限制。非个性化广告不等于不收集数据。</p>
+        <p><strong>广告数据：</strong>我们使用 Google AdMob，并在首次启动时通过 Apple ATT 请求授权。无论是否允许 ATT，在满足适用的 Google 同意要求后均可请求非个性化广告；实际展示取决于网络和广告供应。我们关闭广告 SDK 的发布商第一方 ID 和发布商个性化设置。未授权时无法使用 IDFA，且不启用 Firebase 统计；记录、登录和备份仍可使用。经期、健康记录和账号邮箱不会通过我们的广告调用传给广告商。你可随时在系统设置中更改 ATT 授权。</p>
+        <p><strong>购买信息：</strong>如果你购买 VIP 会员或其他内购项目，交易由 Apple App Store 处理，我们不会获取你的银行卡号等支付信息，只会收到购买状态用于为你解锁相应权益。</p>
 
         <h2>2. 我们如何使用这些信息</h2>
         <ul>
@@ -88,18 +89,19 @@
           <li>Google 登录（Google Sign-In）</li>
           <li>Apple 登录（Sign in with Apple）</li>
           <li>Google AdMob（广告）</li>
-          <li>Apple App Store / Google Play 内购结算</li>
+          <li>Apple App Store 内购结算</li>
+          <li>Apple 健康 / HealthKit（仅在你授权导入时）</li>
         </ul>
         <p>建议同时查阅这些第三方的隐私政策，以了解它们各自的数据处理方式。</p>
 
         <h2>5. 订阅与使用条款</h2>
-        <p>如果你购买自动续订订阅，订阅会通过 Apple App Store 或 Google Play 管理，并会按照对应平台显示的价格、周期与续订规则处理。你可以在系统账户的订阅管理页面取消或管理订阅。</p>
+        <p>如果你购买自动续订订阅，订阅会通过 Apple App Store 管理，并会按照对应平台显示的价格、周期与续订规则处理。你可以在系统账户的订阅管理页面取消或管理订阅。</p>
         <p>在 iOS 上，本应用使用 Apple 标准最终用户许可协议（EULA）。你可以在此查看：<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple Standard EULA</a>。</p>
 
         <h2>6. 你的选择与权利</h2>
         <ul>
           <li>你可以随时在设置中关闭云备份，并删除已上传的云端备份数据；</li>
-          <li>你可以在系统设置中关闭个性化广告跟踪（iOS 的"跟踪"权限、Android 的广告个性化设置）；</li>
+          <li>你可在 iOS 系统设置中管理“追踪”权限，并在应用“广告隐私设置”中管理适用的 Google 同意选项；拒绝 ATT 不会自动移除广告。</li>
           <li>你可以卸载应用以删除设备本地保存的全部数据；</li>
           <li>如你所在地区法律（如 GDPR、CCPA）赋予你访问、更正、删除、导出个人信息等权利，你可以通过下方联系方式向我们提出请求，我们会在合理时间内处理。</li>
         </ul>
@@ -133,9 +135,10 @@
         <p><strong>帳戶資訊：</strong>如果你選擇使用 Google 登入或 Apple 登入，我們會取得你授權提供的電子郵件地址、姓名與頭像，用於建立和識別你的帳戶。如果你不登入，僅在本機使用，我們不會收集此類資訊。</p>
         <p><strong>健康與週期資料：</strong>你在應用程式中記錄的經期、排卵、症狀、心情、睡眠、體溫、體重、運動、飲水、親密關係、用藥、備註等資訊。這些資料<strong>預設只保存在你裝置本機的資料庫中</strong>，不會自動上傳。</p>
         <p><strong>雲端備份資料（可選功能）：</strong>如果你登入帳戶並主動開啟「雲端備份」，上述健康與週期資料的備份會上傳並儲存在由 Google Firebase 提供的 Cloud Firestore 中，以便你更換裝置時可以還原資料。你可以隨時在設定中關閉此功能，並刪除已上傳的雲端備份。</p>
-        <p><strong>使用與分析資料：</strong>我們使用 Firebase Analytics 收集應用程式使用情況，例如功能使用頻率、頁面瀏覽、裝置型號、作業系統版本與當機日誌，用於排查問題和改善產品體驗。</p>
-        <p><strong>廣告資料：</strong>我們使用 Google AdMob 在應用程式中展示廣告，可能會用到廣告識別碼（如 iOS 的 IDFA）以投放更相關的廣告。在 iOS 裝置上，我們會依據系統的應用程式追蹤透明度（ATT）框架請求你的授權，僅在你同意後才會用於跨應用程式追蹤；你可以隨時在系統設定中修改此授權。</p>
-        <p><strong>購買資訊：</strong>如果你購買 VIP 會員或其他應用程式內購買項目，交易由 Apple App Store 或 Google Play 處理，我們不會取得你的銀行卡號等付款資訊，只會收到購買狀態用於為你解鎖相應權益。</p>
+        <p><strong>Apple 健康資料（可選功能）：</strong>只有在你主動授權後，本應用程式才會從 Apple 健康單向讀取經期、體重與睡眠資料。匯入會在裝置本機完成，不會修改 Apple 健康中的資料；除非你另外開啟雲端備份，否則匯入的資料不會上傳。</p>
+        <p><strong>使用與分析資料：</strong>僅在 ATT 已授權且識別為正式 App Store 安裝時，我們啟用 Firebase Analytics，收集功能使用、頁面瀏覽等事件及裝置資訊以改善產品。拒絕 ATT 時不啟用該統計。Google AdMob 仍可能依其 SDK 資料揭露收集 IP 位址（可推斷大致位置）、裝置識別碼、廣告與互動資料、當機與效能診斷資訊，用於廣告投放、衡量及服務改善；具體處理受適用的同意與系統權限限制。非個人化廣告不等於不收集資料。</p>
+        <p><strong>廣告資料：</strong>我們使用 Google AdMob，並在首次啟動時透過 Apple ATT 請求授權。無論是否允許 ATT，在符合適用的 Google 同意要求後均可請求非個人化廣告；實際顯示取決於網路和廣告供應。我們關閉廣告 SDK 的發布商第一方 ID 與發布商個人化設定。未授權時無法使用 IDFA，且不啟用 Firebase 統計；記錄、登入與備份仍可使用。經期、健康記錄與帳號電子郵件不會透過我們的廣告呼叫傳給廣告商。你可隨時在系統設定中更改 ATT 授權。</p>
+        <p><strong>購買資訊：</strong>如果你購買 VIP 會員或其他應用程式內購買項目，交易由 Apple App Store 處理，我們不會取得你的銀行卡號等付款資訊，只會收到購買狀態用於為你解鎖相應權益。</p>
 
         <h2>2. 我們如何使用這些資訊</h2>
         <ul>
@@ -157,18 +160,19 @@
           <li>Google 登入（Google Sign-In）</li>
           <li>Apple 登入（Sign in with Apple）</li>
           <li>Google AdMob（廣告）</li>
-          <li>Apple App Store / Google Play 應用程式內購買結算</li>
+          <li>Apple App Store 應用程式內購買結算</li>
+          <li>Apple 健康 / HealthKit（僅在你授權匯入時）</li>
         </ul>
         <p>建議同時查閱這些第三方的隱私政策，以了解它們各自的資料處理方式。</p>
 
         <h2>5. 訂閱與使用條款</h2>
-        <p>如果你購買自動續訂訂閱，訂閱會透過 Apple App Store 或 Google Play 管理，並會依照對應平台顯示的價格、週期與續訂規則處理。你可以在系統帳戶的訂閱管理頁面取消或管理訂閱。</p>
+        <p>如果你購買自動續訂訂閱，訂閱會透過 Apple App Store 管理，並會依照對應平台顯示的價格、週期與續訂規則處理。你可以在系統帳戶的訂閱管理頁面取消或管理訂閱。</p>
         <p>在 iOS 上，本應用程式使用 Apple 標準最終使用者授權協議（EULA）。你可以在此查看：<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple Standard EULA</a>。</p>
 
         <h2>6. 你的選擇與權利</h2>
         <ul>
           <li>你可以隨時在設定中關閉雲端備份，並刪除已上傳的雲端備份資料；</li>
-          <li>你可以在系統設定中關閉個人化廣告追蹤（iOS 的「追蹤」權限、Android 的廣告個人化設定）；</li>
+          <li>你可在 iOS 系統設定中管理「追蹤」權限，並在應用程式「廣告隱私設定」中管理適用的 Google 同意選項；拒絕 ATT 不會自動移除廣告。</li>
           <li>你可以卸載應用程式以刪除裝置本機保存的全部資料；</li>
           <li>如你所在地區法律（如 GDPR、CCPA）賦予你存取、更正、刪除、匯出個人資訊等權利，你可以透過下方聯絡方式向我們提出請求，我們會在合理時間內處理。</li>
         </ul>
@@ -202,9 +206,10 @@
         <p><strong>アカウント情報：</strong>Google ログインまたは Apple ログインを利用する場合、あなたが許可したメールアドレス、氏名、プロフィール画像を取得し、アカウントの作成と識別に使用します。ログインせずに利用する場合、これらの情報は収集されません。</p>
         <p><strong>健康・周期データ：</strong>月経、排卵、症状、気分、睡眠、体温、体重、運動、水分摂取、性交渉、服薬、メモなど、アプリ内で記録する情報です。これらのデータは<strong>初期設定では端末内のローカルデータベースにのみ保存</strong>され、自動的にアップロードされることはありません。</p>
         <p><strong>クラウド保存データ（任意機能）：</strong>ログインして「クラウド保存」を有効にすると、上記の健康・周期データのバックアップが Google Firebase の Cloud Firestore にアップロード・保存され、機種変更時に復元できます。この機能は設定でいつでも無効化でき、アップロード済みのバックアップも削除できます。</p>
-        <p><strong>利用・解析データ：</strong>Firebase Analytics を使用して、機能の利用頻度、画面表示、端末モデル、OS バージョン、クラッシュログなどのアプリ利用状況を収集し、不具合の診断や製品改善に利用します。</p>
-        <p><strong>広告データ：</strong>Google AdMob を使用して広告を表示し、より関連性の高い広告を配信するために広告識別子（iOS の IDFA など）を利用する場合があります。iOS では Apple の App トラッキング透明性（ATT）の枠組みに基づき許可を求め、同意いただいた場合のみアプリ間トラッキングを行います。この許可は端末の設定でいつでも変更できます。</p>
-        <p><strong>購入情報：</strong>VIP メンバーシップなどのアプリ内購入を行った場合、決済は Apple App Store または Google Play が処理します。当社はカード番号などの決済情報を取得せず、特典を解除するための購入状況のみを受け取ります。</p>
+        <p><strong>Appleヘルスケアのデータ（任意機能）：</strong>明示的に許可した場合に限り、本アプリはAppleヘルスケアから月経、体重、睡眠のデータを一方向で読み込みます。読み込みは端末上で行われ、Appleヘルスケアのデータを変更しません。クラウド保存を別途有効にしない限り、読み込んだデータはアップロードされません。</p>
+        <p><strong>利用・解析データ：</strong>ATT が許可され、正式な App Store インストールと判定された場合にのみ Firebase Analytics を有効にし、機能利用や画面表示などのイベントと端末情報を製品改善に使用します。ATT が拒否された場合、この解析は無効です。Google AdMob は SDK の開示に従い、IP アドレス（おおよその位置の推定に利用可能）、端末識別子、広告・操作データ、クラッシュ・性能診断情報を広告配信、測定、サービス改善のために収集する場合があります。処理には適用される同意とシステム権限の制限が適用されます。非パーソナライズ広告でもデータ収集は行われる場合があります。</p>
+        <p><strong>広告データ：</strong>Google AdMob を使用し、初回起動時に Apple ATT の許可を求めます。ATT の許可の有無にかかわらず、適用される Google の同意要件を満たした場合は非パーソナライズ広告をリクエストできます。表示は通信状況と広告在庫に依存します。広告 SDK のパブリッシャーのファーストパーティ ID とパーソナライズ設定を無効にしています。ATT が許可されていない場合、IDFA は利用できず、Firebase Analytics も有効にしません。記録、ログイン、バックアップは引き続き利用できます。生理・健康記録やアカウントのメールアドレスを当社の広告呼び出しで送信することはありません。ATT の許可はシステム設定で変更できます。</p>
+        <p><strong>購入情報：</strong>VIP メンバーシップなどのアプリ内購入を行った場合、決済は Apple App Store が処理します。当社はカード番号などの決済情報を取得せず、特典を解除するための購入状況のみを受け取ります。</p>
 
         <h2>2. 情報の利用方法</h2>
         <ul>
@@ -226,18 +231,19 @@
           <li>Google ログイン（Google Sign-In）</li>
           <li>Apple でサインイン（Sign in with Apple）</li>
           <li>Google AdMob（広告）</li>
-          <li>Apple App Store / Google Play のアプリ内購入決済</li>
+          <li>Apple App Store のアプリ内購入決済</li>
+          <li>Appleヘルスケア / HealthKit（読み込みを許可した場合のみ）</li>
         </ul>
         <p>各サービスがどのようにデータを処理しているかについては、それぞれのプライバシーポリシーもご確認ください。</p>
 
         <h2>5. サブスクリプションと利用規約</h2>
-        <p>自動更新サブスクリプションを購入した場合、サブスクリプションは Apple App Store または Google Play によって管理され、各プラットフォームに表示される価格、期間、更新条件に従って処理されます。サブスクリプションは、システムアカウントのサブスクリプション管理画面でキャンセルまたは管理できます。</p>
+        <p>自動更新サブスクリプションを購入した場合、サブスクリプションは Apple App Store によって管理され、各プラットフォームに表示される価格、期間、更新条件に従って処理されます。サブスクリプションは、システムアカウントのサブスクリプション管理画面でキャンセルまたは管理できます。</p>
         <p>iOS では、本アプリは Apple 標準エンドユーザー使用許諾契約（EULA）を使用します。こちらで確認できます：<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple Standard EULA</a>。</p>
 
         <h2>6. あなたの選択と権利</h2>
         <ul>
           <li>設定でいつでもクラウド保存を無効化し、アップロード済みのバックアップを削除できます；</li>
-          <li>システム設定でパーソナライズ広告のトラッキングを無効化できます（iOS の「トラッキング」許可、Android の広告のパーソナライズ設定）；</li>
+          <li>iOS の設定で「トラッキング」の許可を、アプリの広告プライバシー設定で適用される Google の同意を管理できます。ATT の拒否によって広告が自動的に削除されるわけではありません。</li>
           <li>アプリをアンインストールすることで、端末に保存された全データを削除できます；</li>
           <li>お住まいの地域の法律（GDPR、CCPA など）により、個人情報へのアクセス、訂正、削除、エクスポートなどの権利が認められている場合、下記の連絡先からご請求いただければ、合理的な期間内に対応します。</li>
         </ul>
@@ -271,9 +277,10 @@
         <p><strong>계정 정보:</strong> Google 로그인 또는 Apple 로그인을 이용하는 경우, 귀하가 허용한 이메일 주소, 이름, 프로필 사진을 받아 계정을 생성하고 식별하는 데 사용합니다. 로그인 없이 기기에서만 이용하는 경우 이러한 정보는 수집되지 않습니다.</p>
         <p><strong>건강 및 주기 데이터:</strong> 생리, 배란, 증상, 기분, 수면, 체온, 체중, 운동, 수분 섭취, 성관계, 복약, 메모 등 앱에서 기록하는 정보입니다. 이 데이터는 <strong>기본적으로 기기 내 로컬 데이터베이스에만 저장</strong>되며 자동으로 업로드되지 않습니다.</p>
         <p><strong>클라우드 백업 데이터(선택 기능):</strong> 로그인 후 "클라우드 백업"을 직접 활성화하면, 위 건강 및 주기 데이터의 백업이 Google Firebase의 Cloud Firestore에 업로드 및 저장되어 기기를 변경할 때 복원할 수 있습니다. 이 기능은 설정에서 언제든지 끌 수 있으며, 이미 업로드된 백업도 삭제할 수 있습니다.</p>
-        <p><strong>이용 및 분석 데이터:</strong> 당사는 Firebase Analytics를 사용하여 기능 이용 빈도, 화면 조회, 기기 모델, OS 버전, 충돌 로그 등 앱 이용 현황을 수집하여 문제를 진단하고 제품을 개선합니다.</p>
-        <p><strong>광고 데이터:</strong> 당사는 Google AdMob을 사용하여 앱 내 광고를 표시하며, 더 관련성 높은 광고를 제공하기 위해 광고 식별자(iOS의 IDFA 등)를 사용할 수 있습니다. iOS에서는 Apple의 앱 추적 투명성(ATT) 정책에 따라 동의를 요청하며, 동의한 경우에만 앱 간 추적을 수행합니다. 이 권한은 시스템 설정에서 언제든지 변경할 수 있습니다.</p>
-        <p><strong>구매 정보:</strong> VIP 멤버십 등 인앱 구매를 진행하는 경우, 결제는 Apple App Store 또는 Google Play에서 처리됩니다. 당사는 카드 번호 등 결제 정보를 받지 않으며, 혜택 제공을 위한 구매 상태만 전달받습니다.</p>
+        <p><strong>Apple 건강 데이터(선택 기능):</strong> 사용자가 직접 허용한 경우에만 앱이 Apple 건강에서 생리, 체중 및 수면 데이터를 단방향으로 읽습니다. 가져오기는 기기에서 처리되며 Apple 건강의 데이터를 변경하지 않습니다. 클라우드 백업을 별도로 켜지 않는 한 가져온 데이터는 업로드되지 않습니다.</p>
+        <p><strong>이용 및 분석 데이터:</strong>ATT가 허용되고 정식 App Store 설치로 확인된 경우에만 Firebase Analytics를 활성화하여 기능 이용, 화면 조회 등의 이벤트와 기기 정보를 제품 개선에 사용합니다. ATT 거부 시 이 분석은 비활성화됩니다. Google AdMob은 SDK 공개 사항에 따라 IP 주소(대략적인 위치 추정 가능), 기기 식별자, 광고 및 상호작용 데이터, 충돌 및 성능 진단 정보를 광고 제공, 측정 및 서비스 개선에 수집할 수 있습니다. 해당 동의 및 시스템 권한 제한이 적용됩니다. 비개인화 광고도 데이터를 수집할 수 있습니다.</p>
+        <p><strong>광고 데이터:</strong>Google AdMob을 사용하며 첫 실행 시 Apple ATT 권한을 요청합니다. ATT 허용 여부와 관계없이 해당 Google 동의 요건을 충족하면 비개인화 광고를 요청할 수 있습니다. 실제 표시는 네트워크와 광고 공급에 따라 달라집니다. 광고 SDK의 게시자 퍼스트 파티 ID와 게시자 개인화 설정을 비활성화합니다. ATT 미허용 시 IDFA를 사용할 수 없으며 Firebase Analytics도 활성화하지 않습니다. 기록, 로그인, 백업은 계속 사용할 수 있습니다. 생리 및 건강 기록과 계정 이메일은 당사의 광고 호출을 통해 전송하지 않습니다. ATT 권한은 시스템 설정에서 변경할 수 있습니다.</p>
+        <p><strong>구매 정보:</strong> VIP 멤버십 등 인앱 구매를 진행하는 경우, 결제는 Apple App Store에서 처리됩니다. 당사는 카드 번호 등 결제 정보를 받지 않으며, 혜택 제공을 위한 구매 상태만 전달받습니다.</p>
 
         <h2>2. 정보 이용 방법</h2>
         <ul>
@@ -295,18 +302,19 @@
           <li>Google 로그인(Google Sign-In)</li>
           <li>Apple로 로그인(Sign in with Apple)</li>
           <li>Google AdMob(광고)</li>
-          <li>Apple App Store / Google Play 인앱 결제</li>
+          <li>Apple App Store 인앱 결제</li>
+          <li>Apple 건강 / HealthKit(가져오기를 허용한 경우에만)</li>
         </ul>
         <p>각 서비스의 데이터 처리 방식을 이해하기 위해 해당 서비스의 개인정보 처리방침도 함께 확인하시기를 권장합니다.</p>
 
         <h2>5. 구독 및 이용 약관</h2>
-        <p>자동 갱신 구독을 구매하는 경우, 구독은 Apple App Store 또는 Google Play를 통해 관리되며 해당 플랫폼에 표시되는 가격, 기간 및 갱신 조건에 따라 처리됩니다. 시스템 계정의 구독 관리 화면에서 구독을 취소하거나 관리할 수 있습니다.</p>
+        <p>자동 갱신 구독을 구매하는 경우, 구독은 Apple App Store를 통해 관리되며 해당 플랫폼에 표시되는 가격, 기간 및 갱신 조건에 따라 처리됩니다. 시스템 계정의 구독 관리 화면에서 구독을 취소하거나 관리할 수 있습니다.</p>
         <p>iOS에서는 본 앱이 Apple 표준 최종 사용자 사용권 계약(EULA)을 사용합니다. 다음에서 확인할 수 있습니다: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple Standard EULA</a>.</p>
 
         <h2>6. 귀하의 선택과 권리</h2>
         <ul>
           <li>설정에서 언제든지 클라우드 백업을 끄고, 이미 업로드된 백업 데이터를 삭제할 수 있습니다；</li>
-          <li>시스템 설정에서 맞춤형 광고 추적을 끌 수 있습니다(iOS의 "추적" 권한, Android의 광고 맞춤설정)；</li>
+          <li>iOS 설정에서 추적 권한을, 앱의 광고 개인정보 설정에서 해당 Google 동의 옵션을 관리할 수 있습니다. ATT 거부가 광고를 자동으로 제거하지는 않습니다.</li>
           <li>앱을 삭제하여 기기에 저장된 모든 로컬 데이터를 삭제할 수 있습니다；</li>
           <li>거주 지역의 법률(GDPR, CCPA 등)에 따라 개인정보에 대한 접근, 정정, 삭제, 내보내기 등의 권리가 인정되는 경우, 아래 연락처로 요청하시면 합리적인 기간 내에 처리해 드립니다.</li>
         </ul>
@@ -340,9 +348,10 @@
         <p><strong>Account information:</strong> If you choose to sign in with Google or Apple, we receive the email address, name, and profile photo you authorize us to access, used to create and identify your account. If you use the app without signing in, we do not collect this information.</p>
         <p><strong>Health &amp; cycle data:</strong> Period, ovulation, symptoms, mood, sleep, temperature, weight, exercise, water intake, intimacy, medication, and notes that you log in the app. This data is <strong>stored locally on your device by default</strong> and is not uploaded automatically.</p>
         <p><strong>Cloud backup data (optional):</strong> If you sign in and actively enable "Cloud Backup," a backup of the health and cycle data above is uploaded to and stored in Google Firebase Cloud Firestore so you can restore it when switching devices. You can disable this feature at any time in Settings and delete any backups already uploaded.</p>
-        <p><strong>Usage &amp; analytics data:</strong> We use Firebase Analytics to collect app usage information such as feature usage frequency, screen views, device model, OS version, and crash logs, to diagnose issues and improve the product.</p>
-        <p><strong>Advertising data:</strong> We use Google AdMob to display ads, which may use advertising identifiers (such as IDFA on iOS) to serve more relevant ads. On iOS, we request your authorization via Apple's App Tracking Transparency (ATT) framework and only track you across apps if you consent; you can change this permission at any time in system settings.</p>
-        <p><strong>Purchase information:</strong> If you purchase a VIP subscription or other in-app item, the transaction is processed by the Apple App Store or Google Play. We never receive your card number or other payment details — only a purchase status used to unlock the corresponding benefits.</p>
+        <p><strong>Apple Health data (optional):</strong> Only after you grant permission, the app can import menstrual flow, body mass, and sleep data from Apple Health. This is a one-way import processed on your device and does not modify Apple Health data. Imported data is not uploaded unless you separately enable Cloud Backup.</p>
+        <p><strong>Usage &amp; analytics data:</strong>We enable Firebase Analytics only when ATT is authorized and the installation is identified as a production App Store installation. Feature usage, screen views and device information help improve the product. This analytics collection is disabled when ATT is denied. Google AdMob may still collect IP addresses (which can infer approximate location), device identifiers, advertising and interaction data, and crash/performance diagnostics as described in its SDK disclosures, for ad delivery, measurement and service improvement, subject to applicable consent and system permissions. Non-personalized ads do not mean no data collection.</p>
+        <p><strong>Advertising data:</strong>We use Google AdMob and request Apple ATT authorization on first launch. Whether ATT is allowed or denied, we may request non-personalized ads after the applicable Google consent requirements are satisfied. Display depends on connectivity and ad availability. We disable publisher first-party ID and publisher personalization in the advertising SDK. Without ATT authorization, IDFA is unavailable and Firebase Analytics remains disabled; recording, sign-in and backup remain available. We do not pass cycle/health records or account email addresses through our advertising calls. You can change ATT authorization in system settings.</p>
+        <p><strong>Purchase information:</strong> If you purchase a VIP subscription or other in-app item, the transaction is processed by the Apple App Store. We never receive your card number or other payment details — only a purchase status used to unlock the corresponding benefits.</p>
 
         <h2>2. How We Use This Information</h2>
         <ul>
@@ -364,18 +373,19 @@
           <li>Google Sign-In</li>
           <li>Sign in with Apple</li>
           <li>Google AdMob (advertising)</li>
-          <li>Apple App Store / Google Play billing</li>
+          <li>Apple App Store billing</li>
+          <li>Apple Health / HealthKit (only when you authorize import)</li>
         </ul>
         <p>We recommend also reviewing these third parties' own privacy policies to understand how each of them handles data.</p>
 
         <h2>5. Subscriptions &amp; Terms of Use</h2>
-        <p>If you purchase an auto-renewable subscription, the subscription is managed by Apple App Store or Google Play and is processed according to the price, duration, and renewal terms shown by the applicable platform. You can cancel or manage your subscription in your system account's subscription settings.</p>
+        <p>If you purchase an auto-renewable subscription, the subscription is managed by Apple App Store and is processed according to the price, duration, and renewal terms shown by the applicable platform. You can cancel or manage your subscription in your system account's subscription settings.</p>
         <p>On iOS, the app uses Apple's standard End User License Agreement (EULA). You can review it here: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple Standard EULA</a>.</p>
 
         <h2>6. Your Choices &amp; Rights</h2>
         <ul>
           <li>You can disable Cloud Backup at any time in Settings and delete any backups already uploaded;</li>
-          <li>You can turn off personalized ad tracking in system settings (iOS "Tracking" permission, Android ad personalization settings);</li>
+          <li>You can manage Tracking permission in iOS Settings and applicable Google consent options in the app’s Advertising Privacy Settings. Denying ATT does not automatically remove ads.</li>
           <li>You can uninstall the app to delete all data stored locally on your device;</li>
           <li>Where applicable law (such as GDPR or CCPA) grants you rights to access, correct, delete, or export your personal information, you may contact us using the details below and we will respond within a reasonable time.</li>
         </ul>
